@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreeGPT</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__container">
+        <header class="header">
+          <div class="header__logo">
+            <img src="icons/icon16.png" alt="freeGPT" />
+          </div>
+
+          <!-- <div class="header__chat btn">CHAT</div> -->
+          <!-- <div class="header__history btn">HISTORY</div> -->
+        </header>
+
+        <main class="main">
+          <div class="main__imgCont">
+            <div class="imgCont__title">IMAGE</div>
+            <input class="imgCont__input" type="file" />
+            <img class="imgCont__imgPreview" />
+          </div>
+
+          <div class="main__chooseModel">
+            <label>MODEL:</label>
+            <select id="model">
+              <option>gpt-4o</option>
+              <option>gpt-4o-mini</option>
+              <option>o1</option>
+              <!-- <option>o1-mini</option> -->
+              <option>o3</option>
+              <option>o4-mini</option>
+              <option>gpt-4.5-preview</option>
+              <option>gpt-4.1</option>
+            </select>
+          </div>
+
+          <textarea class="main__prompt" placeholder="Ваш запрос..."></textarea>
+
+          <div class="main__send btn">SEND</div>
+
+          <div class="main__answer"></div>
+        </main>
+      </div>
+    </div>
+  </body>
+
+  <script src="popup.js"></script>
+</html>
